@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<!-- Author: Matthew Escobar, Date: 11/6/2019, Purpose: A website about a fake school made for CNIT132 -->
+
+<head>
+    <title>Very old HTML</title>
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        /* visited link */
+        a:visited {
+            color: blue;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: green;
+        }
+
+        /* selected link */
+        a:active {
+            color: green;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        h2 {
+            text-align: right;
+            color: blue;
+            font-style: italic;
+        }
+
+        #custom-h2 {
+            font-size: xx-large;
+        }
+
+        h3 {
+            text-align: right;
+            color: red;
+        }
+
+        p::first-letter {
+            font-size: xx-large;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        #red {
+            color: red;
+            display: inline;
+        }
+
+        table,
+        th,
+        td {
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+            border-spacing: 10px;
+        }
+
+        #tdr
+
+        /*the items on the right side of the table*/
+            {
+            font-weight: normal;
+        }
+
+        #animatedBackground {
+            width: max-content;
+            background: cyan;
+            position: relative;
+            /* animation part */
+            animation-name: tableAnimation;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+            /* Firefox: */
+            -moz-animation-name: tableAnimation;
+            -moz-animation-duration: 5s;
+            -moz-animation-timing-function: linear;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-direction: alternate;
+            -moz-animation-play-state: running;
+            /* Safari and Chrome: */
+            -webkit-animation-name: tableAnimation;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+        }
+
+        @keyframes tableAnimation {
+            from {
+                background-color: cyan;
+                color: black;
+            }
+
+            to {
+                background-color: green;
+                color: white;
+            }
+        }
+
+        @-moz-keyframes tableAnimation {
+            from {
+                background-color: cyan;
+                color: black;
+            }
+
+            to {
+                background-color: green;
+                color: white;
+            }
+        }
+
+        @-webkit-keyframes tableAnimation {
+            from {
+                background-color: cyan;
+                color: black;
+            }
+
+            to {
+                background-color: green;
+                color: white;
+            }
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        This is the first heading
+    </h1>
+    <p>This is my first paragraph and all the paragraphs in this page will start with a bigger font</p>
+    <p>
+        My life as a web developer, has been pretty much amazing! I started
+        developing web pages when there was no CSS to be used and all formatting was done using HTML tags that currently
+        are considered deprecated or even eliminated from good web developed pages. One example of tags that have been
+        eliminated are: <span id="red">&lt;font&gt;, &lt;center&gt;</span>. There are some attributes that have been
+        also eliminated in order to clean more the HTML code and put all the formatting (style) to CSS.
+    </p>
+    <h2>
+        Using CSS
+    </h2>
+    <p>
+        When CSS was created, the main idea was exactly to take all of these
+        formatting tags and attributes from the HTML document and transfer them to an external file that would only take
+        care of formatting the HTML page. The idea is that the HTML document should be focused on the content of the
+        page and the formatting, even layout, would be in a separated file.
+    </p>
+    <p>
+        Whis standard has been supported and adopted world wide by W3C (<span id="red">World Wide Web Consortium</span>)
+        which is the organization that sets the standards for web
+        development.
+    </p>
+    <h2>
+        <div id="custom-h2">End of this exercise</div>
+    </h2>
+    <p>
+        At the end of this exercise, you will take all of these bad attributes and
+        formatting tags that are taking too much space in this HTML document and you will create an <span id="red">
+            embedded CSS</span> using the <span id="red">&lt;style&gt; tag</span> (of course, placing this tag in the
+        appropriate section of your document). Within that style tag, you will transfer all the formatting you see in
+        this page and create appropriate CSS in order to clean the HTML document without changing the formatting that
+        this old style HTML has created!
+    </p>
+    <p>
+        Tis a link to <a href="http://www.ccsf.edu">City College web site</a>.
+        After you visit this page, this link should be white due to the vlink attribute in the body tag. If you have
+        never visited this link, then, it will be red due to the link attribute in the body tag as well.
+    </p>
+    <h3>The table showing below
+    </h3>
+    <div id="animatedBackground">
+        <table>
+            <tr>
+                <td>This table should have a cyan background color and the text is centralized within each
+                    column</td>
+                <td>
+                    <div id="tdr">Second column, first row</div>
+                </td>
+            </tr>
+            <tr>
+                <td>Would you please animate from cyan to green background?</td>
+                <td>
+                    <div id="tdr">Second column, second row</div>
+                </td>
+            </tr>
+            <tr>
+                <td>Remember to also animate the color of the font from black to white</td>
+                <td>
+                    <div id="tdr">Second column, third row</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
